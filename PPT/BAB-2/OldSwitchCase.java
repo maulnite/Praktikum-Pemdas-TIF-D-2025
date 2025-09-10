@@ -23,5 +23,6 @@ public class OldSwitchCase {
             default:
                 System.out.println("Invalid predikat");
         }
+        scanner.close();
     }
 }

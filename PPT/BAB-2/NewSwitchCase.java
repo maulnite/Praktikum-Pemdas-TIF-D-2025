@@ -24,5 +24,6 @@ public class NewSwitchCase {
                 System.out.println("Invalid predikat");
             }
         }
+        scanner.close();
     }
 }
