@@ -23,5 +23,6 @@ public class Seleksi2 {
                 System.out.println("Brawijaya");
             }
         }
+        in.close();
     }
 }

@@ -1,5 +1,6 @@
+import java.util.Scanner;
 
-import java.util.Scanner; public class seleksi1 {
+public class seleksi1 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("masukkan nilai: ");
@@ -11,5 +12,6 @@ import java.util.Scanner; public class seleksi1 {
         else {
             System.out.println("Anda gagal");
         }
+        in.close();
     }
 }

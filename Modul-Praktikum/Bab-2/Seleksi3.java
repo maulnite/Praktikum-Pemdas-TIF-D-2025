@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Seleksi3 {
 
     public static void main(String[] args) {
@@ -46,5 +47,6 @@ public class Seleksi3 {
             default:
                 System.out.println("Data tidak ditemukan");
         }
+        in.close();
     }
 }
