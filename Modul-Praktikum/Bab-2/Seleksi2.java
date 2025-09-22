@@ -8,20 +8,17 @@ public class Seleksi2 {
         if (nilai * 2 < 50) {
             nilai += 10;
         }
-        if (nilai <= 20) {
-            System.out.println("Filkom");
-            if (nilai % 2 == 1) {
-                System.out.println("UB");
-            } else {
-                System.out.println("Brawijaya");
-            }
-        } else {
-            System.out.println("PTIIK");
-            if (nilai % 2 == 1) {
-                System.out.println("UB");
-            } else {
-                System.out.println("Brawijaya");
-            }
+        if (nilai <= 20 && nilai % 2 !=0) {
+            System.out.println("Filkom UB");
+        }
+        else if (nilai <= 20 && nilai % 2 == 0){
+            System.out.println("FILKOM Brawijaya");
+        }
+        else if (nilai % 2 != 0) {
+            System.out.println("PTIIK UB");
+        }
+        else {
+            System.out.println("PTIIK Brawijaya");
         }
         in.close();
     }
