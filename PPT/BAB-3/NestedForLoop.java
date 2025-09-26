@@ -5,7 +5,7 @@ public class NestedForLoop {
         for (int i = 0; i < tinggi; i++) {
 
             // print spasi
-            for (int j = tinggi; j > i; j--) {
+            for (int j = tinggi-1; j > i; j--) {
                 System.out.print(" ");
             }
 
