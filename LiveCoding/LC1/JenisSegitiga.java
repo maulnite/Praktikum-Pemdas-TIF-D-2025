@@ -1,3 +1,5 @@
+package LC1;
+
 import java.util.Scanner;
 
 public class JenisSegitiga {
