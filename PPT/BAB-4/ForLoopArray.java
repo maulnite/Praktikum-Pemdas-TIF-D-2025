@@ -4,7 +4,7 @@ public class ForLoopArray {
         Scanner input = new Scanner(System.in);
         int jlh = input.nextInt();
         int[] arr = new int[jlh];
-        for (int i = 0; i < jlh; i++) {
+        for (int i = 0; i < arr.length; i++) {
             arr[i] = input.nextInt();
         }
         System.out.println("Isi array yang dimasukkan: ");

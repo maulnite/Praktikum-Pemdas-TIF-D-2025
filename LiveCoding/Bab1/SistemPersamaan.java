@@ -7,7 +7,7 @@ public class SistemPersamaan {
         int b = input.nextInt();
         int c = input.nextInt();
 
-        double diskriminan = Math.pow(b,2) - 4 * a * c;
+        double diskriminan = b * b - 4 * a * c;
 
         double x1 = (-b + Math.sqrt(diskriminan)) / (2 * a);
         double x2 = (-b - Math.sqrt(diskriminan)) / (2 * a);
