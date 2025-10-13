@@ -1,5 +1,7 @@
 package LC3;
+
 import java.util.Scanner;
+
 public class Kandang {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -18,9 +20,10 @@ public class Kandang {
             if (kandang[i] > target) {
                 System.out.print("Kandang ke- " + i);
                 System.out.print("\nLuas Kandang: " + kandang[i]);
-                System.out.print("\nJumlah Hewan: " + kandang[i]/luasHewan);
+                System.out.print("\nJumlah Hewan: " + kandang[i] / luasHewan);
                 System.out.println("\n------------------------------");
             }
         }
+        input.close();
     }
 }
