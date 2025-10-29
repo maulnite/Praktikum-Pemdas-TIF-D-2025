@@ -7,6 +7,7 @@ public class Program {
 
     public static void main(String[] args) {
         int lokal = 10;
+        int global = 5;
         global++;
         lokal++;
 

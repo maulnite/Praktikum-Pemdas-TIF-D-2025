@@ -20,7 +20,6 @@ public class MethodRekursif {
         int b = 1;
 
         for (int i = 0; i < count; i++) {
-            System.out.println(a + " " + b + " ");
             a = b;
             b = a + b;
         }
