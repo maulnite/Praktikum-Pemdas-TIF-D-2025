@@ -17,7 +17,7 @@ public class Prak_arr_retval {
         while (i < acak.length) {
             j = i;
             while (j < acak.length) {
-                if (acak[i] > acak[j]) {
+                if (acak[i] < acak[j]) {
                     int temp = acak[i];
                     acak[i] = acak[j];
                     acak[j] = temp;
