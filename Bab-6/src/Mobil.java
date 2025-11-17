@@ -1,8 +1,10 @@
+import java.util.Scanner;
 public class Mobil {
     private String noPlat;
     private String warna;
     private String manufaktur;
-    private int kecepatan;
+    private double kecepatan;
+    private int waktu;
     public void setNoPlat(String s) {
         noPlat = s;
     }
@@ -12,21 +14,36 @@ public class Mobil {
     public void setManufaktur(String s) {
         manufaktur = s;
     }
-    public void setKecepatan(int i) {
+    public void setKecepatan(double i) {
         kecepatan = i;
+    }
+    public void setWaktu(int i) {
+        waktu = i*3600;
+    }
+    public void ubahKecepatan(){
+        kecepatan *= 1000.0/3600;
+    }
+    public void hitungJarak(){
+        double jarak = kecepatan * waktu;
+        System.out.println("Jarak yang ditempuh mobil adalah " + jarak + " meter");
     }
     public void displayMessage() {
         System.out.println("Mobil Anda Adalah bermerek " + manufaktur);
         System.out.println("mempunyai nomor plat " + noPlat);
         System.out.println("serta memiliki warna " + warna);
-        System.out.println("dan mampu menempuh kecepatan" + kecepatan);
+        System.out.println("dan mampu menempuh kecepatan " + kecepatan + " m/s");
+        System.out.println("dalam waktu " + waktu + " detik");
+        hitungJarak();
     }
 
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
         // instansiasi objek bernama m1
         Mobil m1 = new Mobil();
-
+        System.out.print("Masukkan waktu tempuh mobil (dalam jam): ");
+        m1.setWaktu(input.nextInt());
         m1.setKecepatan(50);
+        m1.ubahKecepatan();
         m1.setManufaktur("Toyota");
         m1.setNoPlat("AB 1231 UA");
         m1.setWarna("Merah");
